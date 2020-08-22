@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/snowy01" />
+
+    <ImageView
+        android:id="@+id/ivTop"
+        android:layout_width="212dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivBack"
+        app:srcCompat="@drawable/box1" />
+
+    <ImageView
+        android:id="@+id/ivBottom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="28dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/test7" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
+        android:text="세종특별시 한솔동"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/ivTop"
+        app:layout_constraintTop_toTopOf="@+id/ivTop" />
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="15dp"
+        android:text="30℃"
+        android:textColor="#FFFFFF"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTop"
+        app:layout_constraintStart_toStartOf="@+id/ivTop" />
+
+    <TextView
+        android:id="@+id/tvWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:text="3km/h"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBottom"
+        app:layout_constraintEnd_toEndOf="@+id/ivBottom"
+        app:layout_constraintStart_toStartOf="@+id/ivBottom" />
+
+    <TextView
+        android:id="@+id/tvCloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:text="20%"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBottom"
+        app:layout_constraintEnd_toEndOf="@+id/ivBottom"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toEndOf="@+id/tvWind" />
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="63dp"
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:text="20%"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBottom"
+        app:layout_constraintEnd_toStartOf="@+id/tvWind"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/ivBottom" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
